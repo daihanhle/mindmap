@@ -73,7 +73,7 @@ class IndexTest(unittest.TestCase):
         crul cmd example:
             curl -X POST -H "Content-Type: application/json" 
             -d "{\"path\": \"i\/like\/potatoes\",\"text\": \"Because I like it\"}" 
-            http://localhost:0881/addleaf?id=my-map
+            http://localhost:8081/addleaf?id=my-map
         """
         resp = requests.post(self.URL+"addleaf?" +
                              self.ADD_ID, json=self.ADD_DATA)
@@ -160,7 +160,7 @@ class IndexTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    tester = IndexTest()
+    # tester = IndexTest()
     # tester.test_addleaf()
     # tester.test_readmap()
     unittest.main()
