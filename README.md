@@ -13,16 +13,20 @@ Require python module:
  .\bin\run.bat
 
 #Create a mind map
-curl -X POST -H "Content-Type: application/json" -d "{\"id\": \"my-map\"}" http://127.0.0.1:8081/createmap
+
+    curl -X POST -H "Content-Type: application/json" -d "{\"id\": \"my-map\"}" http://127.0.0.1:8081/createmap
 
 #Add a leaf (path) to the map
-curl -X POST -H "Content-Type: application/json" -d "{\"path\": \"i\/like\/potatoes\",\"text\": \"Because I like it\"}" http://localhost:8081/addleaf?id=my-map
+
+    curl -X POST -H "Content-Type: application/json" -d "{\"path\": \"i\/like\/potatoes\",\"text\": \"Because I like it\"}" http://localhost:8081/addleaf?id=my-map
 
 #Read a leaf (path) of the map
-curl -X GET -H "Content-Type: application/json" "http://localhost:8081/readleaf?id=my-map&path=i/like/potatoes"
+
+    curl -X GET -H "Content-Type: application/json" "http://localhost:8081/readleaf?id=my-map&path=i/like/potatoes"
 
 #Read the whole tree of the mind map
-curl -X GET -H "Content-Type: application/json" "http://localhost:8081/readmap?id=my-map"
+
+    curl -X GET -H "Content-Type: application/json" "http://localhost:8081/readmap?id=my-map"
 
 
 
