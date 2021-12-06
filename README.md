@@ -24,5 +24,13 @@ curl -X GET -H "Content-Type: application/json" "http://localhost:8081/readleaf?
 #Read the whole tree of the mind map
 curl -X GET -H "Content-Type: application/json" "http://localhost:8081/readmap?id=my-map"
 
+Docker Support
+
+build docker image
+  docker build --tag api-mindmap .
+
+Run docker
+  docker run --name=api-mindmap -d -v <localpath>:/app/data -p 8081:8081 api-mindmap
+
 
 

@@ -8,4 +8,6 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
+EXPOSE 8081
+
 CMD [ "python", "./index.py" ]
