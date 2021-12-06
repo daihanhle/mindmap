@@ -1,0 +1,9 @@
+2021-12-05 19:41:44,509 file_manager                             ERROR    Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 19:46:39,434 - ERROR filemanager.py CreateMap 76 Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 19:47:40,261 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 20:04:42,895 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 20:08:40,379 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 20:10:34,390 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 20:11:00,306 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 20:12:34,334 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-05 20:15:40,531 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
