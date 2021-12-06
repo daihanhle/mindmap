@@ -45,7 +45,7 @@ class IndexTest(unittest.TestCase):
         test_createmap function, test to create a map dicretory from root
         crul cmd example:
             curl -v -X POST -H "Content-Type: application/json" 
-            -d "{\"id\": \"my-map\"}" http://127.0.0.1:8081/createma
+            -d "{\"id\": \"my-map\"}" http://127.0.0.1:8081/createmap
         """
         resp = requests.post(self.URL+"createmap", json=self.CREATE_DATA)
         self.assertEqual(resp.status_code, 200)
@@ -162,5 +162,5 @@ class IndexTest(unittest.TestCase):
 if __name__ == "__main__":
     # tester = IndexTest()
     # tester.test_addleaf()
-    # tester.test_readmap()
+    # tester.test_createmap_error_ossep()
     unittest.main()

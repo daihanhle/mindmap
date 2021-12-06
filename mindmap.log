@@ -7,3 +7,142 @@
 2021-12-05 20:11:00,306 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
 2021-12-05 20:12:34,334 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
 2021-12-05 20:15:40,531 - ERROR filemanager.py CreateMap 76 - Schema error2: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-06 10:20:03,097 - ERROR filemanager.py AddLeaf 125 - Input Id error, Id with os separator
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 102, in AddLeaf
+    raise ValueError("Input Id error, Id with os separator")
+ValueError: Input Id error, Id with os separator
+2021-12-06 10:20:03,129 - ERROR filemanager.py CreateMap 75 - Input path error
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 66, in CreateMap
+    raise ValueError("Input path error")
+ValueError: Input path error
+2021-12-06 10:20:03,130 - ERROR app.py log_exception 1458 - Exception on /createmap [POST]
+Traceback (most recent call last):
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "e:\test\04122021\api\index.py", line 24, in create_map
+    msg, code = FileManager.CreateMap(request.get_json())
+TypeError: cannot unpack non-iterable NoneType object
+2021-12-06 10:20:03,140 - ERROR filemanager.py CreateMap 77 - {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 62, in CreateMap
+    input = IdSchema().load(pkg)
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 720, in load
+    data, many=many, partial=partial, unknown=unknown, postprocess=True
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 904, in _do_load
+    raise exc
+marshmallow.exceptions.ValidationError: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-06 10:38:05,013 - ERROR filemanager.py AddLeaf 125 - Input Id error, Id with os separator
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 102, in AddLeaf
+    raise ValueError("Input Id error, Id with os separator")
+ValueError: Input Id error, Id with os separator
+2021-12-06 10:38:05,049 - ERROR filemanager.py CreateMap 75 - Input path error
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 66, in CreateMap
+    raise ValueError("Input path error")
+ValueError: Input path error
+2021-12-06 10:38:05,049 - ERROR app.py log_exception 1458 - Exception on /createmap [POST]
+Traceback (most recent call last):
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "e:\test\04122021\api\index.py", line 24, in create_map
+    msg, code = FileManager.CreateMap(request.get_json())
+TypeError: cannot unpack non-iterable NoneType object
+2021-12-06 10:38:05,057 - ERROR filemanager.py CreateMap 77 - {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 62, in CreateMap
+    input = IdSchema().load(pkg)
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 720, in load
+    data, many=many, partial=partial, unknown=unknown, postprocess=True
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 904, in _do_load
+    raise exc
+marshmallow.exceptions.ValidationError: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-06 10:38:28,189 - ERROR filemanager.py CreateMap 75 - Input path error
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 66, in CreateMap
+    raise ValueError("Input path error")
+ValueError: Input path error
+2021-12-06 10:38:28,189 - ERROR app.py log_exception 1458 - Exception on /createmap [POST]
+Traceback (most recent call last):
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\test\04122021\api\.venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "e:\test\04122021\api\index.py", line 24, in create_map
+    msg, code = FileManager.CreateMap(request.get_json())
+TypeError: cannot unpack non-iterable NoneType object
+2021-12-06 10:39:57,396 - ERROR filemanager.py AddLeaf 126 - Input Id error, Id with os separator
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 103, in AddLeaf
+    raise ValueError("Input Id error, Id with os separator")
+ValueError: Input Id error, Id with os separator
+2021-12-06 10:40:00,794 - ERROR filemanager.py CreateMap 75 - Input path error
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 66, in CreateMap
+    raise ValueError("Input path error")
+ValueError: Input path error
+2021-12-06 10:40:00,804 - ERROR filemanager.py CreateMap 78 - {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 62, in CreateMap
+    input = IdSchema().load(pkg)
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 720, in load
+    data, many=many, partial=partial, unknown=unknown, postprocess=True
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 904, in _do_load
+    raise exc
+marshmallow.exceptions.ValidationError: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-06 11:35:52,666 - ERROR filemanager.py AddLeaf 126 - Input Id error, Id with os separator
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 103, in AddLeaf
+    raise ValueError("Input Id error, Id with os separator")
+ValueError: Input Id error, Id with os separator
+2021-12-06 11:35:52,701 - ERROR filemanager.py CreateMap 75 - Input path error
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 66, in CreateMap
+    raise ValueError("Input path error")
+ValueError: Input path error
+2021-12-06 11:35:52,711 - ERROR filemanager.py CreateMap 78 - {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+Traceback (most recent call last):
+  File "e:\test\04122021\api\filemanager.py", line 62, in CreateMap
+    input = IdSchema().load(pkg)
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 720, in load
+    data, many=many, partial=partial, unknown=unknown, postprocess=True
+  File "e:\test\04122021\api\.venv\lib\site-packages\marshmallow\schema.py", line 904, in _do_load
+    raise exc
+marshmallow.exceptions.ValidationError: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+2021-12-06 12:11:26,429 - ERROR filemanager.py AddLeaf 126 - Input Id error, Id with os separator
+Traceback (most recent call last):
+  File "e:\test\04122021\mindmap\filemanager.py", line 103, in AddLeaf
+    raise ValueError("Input Id error, Id with os separator")
+ValueError: Input Id error, Id with os separator
+2021-12-06 12:11:26,452 - ERROR filemanager.py CreateMap 75 - Input path error
+Traceback (most recent call last):
+  File "e:\test\04122021\mindmap\filemanager.py", line 66, in CreateMap
+    raise ValueError("Input path error")
+ValueError: Input path error
+2021-12-06 12:11:26,457 - ERROR filemanager.py CreateMap 78 - {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}
+Traceback (most recent call last):
+  File "e:\test\04122021\mindmap\filemanager.py", line 62, in CreateMap
+    input = IdSchema().load(pkg)
+  File "e:\test\04122021\mindmap\.venv\lib\site-packages\marshmallow\schema.py", line 720, in load
+    data, many=many, partial=partial, unknown=unknown, postprocess=True
+  File "e:\test\04122021\mindmap\.venv\lib\site-packages\marshmallow\schema.py", line 904, in _do_load
+    raise exc
+marshmallow.exceptions.ValidationError: {'id': ['Missing data for required field.'], 'id2': ['Unknown field.']}

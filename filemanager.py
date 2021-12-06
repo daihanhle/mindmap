@@ -73,6 +73,7 @@ class FileManager(object):
         except ValueError as ex:
             # log error
             cls.logger.exception("{}".format(ex))
+            return str(ex), 400
         except ValidationError as ex:
             cls.logger.exception("{}".format(ex.messages))
             return ex.messages, 422
