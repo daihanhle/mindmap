@@ -31,17 +31,22 @@ Require python module:
 Docker Support
 
 build docker image
-  docker build --tag api-mindmap .
+
+    docker build --tag api-mindmap .
 
 Run docker
-  docker run --name=api-mindmap -d -v <localpath>:/app/data -p 8081:8081 api-mindmap
+  
+    docker run --name=api-mindmap -d -v <localpath>:/app/data -p 8081:8081 api-mindmap
 
 Connect docker
-  docker exec -it <container-id> /bin/bash
+  
+    docker exec -it <container-id> /bin/bash
 
 Checkout docker images mindmap
-  docker pull dhanh/mindmap:mindmap
+  
+    docker pull dhanh/mindmap:mindmap
   
 CI/CD Pipeline push docker build image on dhanh/mindmap-cicd
-  docker pull dhanh/mindmap-cicd:<image tag>
+  
+    docker pull dhanh/mindmap-cicd:<image tag>
 
