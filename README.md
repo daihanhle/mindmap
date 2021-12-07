@@ -41,4 +41,7 @@ Connect docker
 
 Checkout docker images mindmap
   docker pull dhanh/mindmap:mindmap
+  
+CI/CD Pipeline push docker build image on dhanh/mindmap-cicd
+  docker pull dhanh/mindmap-cicd:<image tag>
 
